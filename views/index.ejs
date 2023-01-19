@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Sample Data</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Officia accusantium quia veritatis, numquam facere corporis neque commodi unde eos, distinctio autem reprehenderit impedit esse magni perspiciatis delectus amet inventore vel!
+        </p>
+
+        <p>
+            There is <span style="color: brown; font-size: 24px;"> <%= data.length %> </span> data in dataset
+        </p>
+        <div class="searchbar">
+            <table>
+                <tr>
+                  <th>OrderDate</th>
+                  <th>Region</th>
+                  <th>Item</th>
+                  <th>Units</th>
+                  <th>Total</th>
+                </tr>
+
+                <% for( let i = 0; i < data.length; i++ ) { %>
+                    <tr>
+                        <td><%= data[i].OrderDate %> </td>
+                        <td><%= data[i].Region %> </td>
+                        <td><%= data[i].Item %> </td>
+                        <td><%= data[i].Units %> </td>
+                        <td><%= data[i].Total %> </td>
+                    </tr>
+                <% } %>  
+                    
+              </table>
+        </div>
+    </div>
+
+    
+</body>
+</html>

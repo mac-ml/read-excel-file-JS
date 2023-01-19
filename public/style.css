@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    height: 1vh;
+    font-family: Georgia, Times, 'Times New Roman', serif; 
+
+}
+
+.container {
+    margin-left: 25%;
+    margin-top: 100px;
+    width: 50%;
+    height: 100px;
+    display: grid;
+    justify-items: center;
+}
+
+.seachbar{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.seachbar h3, p {
+    margin-bottom: 25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
